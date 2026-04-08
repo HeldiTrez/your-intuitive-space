@@ -284,9 +284,123 @@
   </section>
 
   <footer>
-    <p>© 2025 Your Intuitive Space · Anaiss &nbsp;·&nbsp; <a href="#">Impressum</a> &nbsp;·&nbsp; <a href="#">Datenschutz</a></p>
+    <p>© 2025 Your Intuitive Space · Anaiss &nbsp;·&nbsp; <a href="#" onclick="openModal('impressum')">Impressum</a> &nbsp;·&nbsp; <a href="#" onclick="openModal('datenschutz')">Datenschutz</a></p>
     <p style="margin-top:0.5rem;font-size:0.65rem;">Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung und ersetzen keine medizinische oder therapeutische Behandlung.</p>
   </footer>
+
+  <!-- IMPRESSUM MODAL -->
+  <div id="modal-impressum" class="modal-overlay" onclick="closeModalOutside(event,'modal-impressum')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('impressum')">✕</button>
+      <h2 class="modal-title">Impressum</h2>
+      <div class="modal-content">
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p><strong>Helga Dinora Triste Juárez</strong><br/>
+        Freiberuflerin<br/>
+        Wolzenseeweg 18<br/>
+        13599 Berlin<br/>
+        Deutschland</p>
+
+        <h3>Kontakt</h3>
+        <p>E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+
+        <h3>Steuernummer</h3>
+        <p>Steuernummer: <em>[folgt in Kürze]</em><br/>
+        Zuständiges Finanzamt: Finanzamt Berlin</p>
+
+        <h3>Berufsbezeichnung</h3>
+        <p>Freiberuflerin · Spirituelle Begleitung & Engel-Channeling</p>
+
+        <h3>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h3>
+        <p>Helga Dinora Triste Juárez<br/>
+        Wolzenseeweg 18, 13599 Berlin</p>
+
+        <h3>Haftung für Inhalte</h3>
+        <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+
+        <h3>Haftung für Links</h3>
+        <p>Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+        <h3>Urheberrecht</h3>
+        <p>Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Autorin.</p>
+
+        <h3>Streitschlichtung (§ 36 VSBG)</h3>
+        <p>Ich bin weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+        <h3>Hinweis</h3>
+        <p>Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung. Sie stellen keine medizinische, psychologische oder therapeutische Behandlung dar und ersetzen nicht die Diagnose oder Behandlung durch einen Arzt, Heilpraktiker oder Therapeuten.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATENSCHUTZ MODAL -->
+  <div id="modal-datenschutz" class="modal-overlay" onclick="closeModalOutside(event,'modal-datenschutz')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('datenschutz')">✕</button>
+      <h2 class="modal-title">Datenschutzerklärung</h2>
+      <div class="modal-content">
+        <h3>1. Datenschutz auf einen Blick</h3>
+        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+
+        <h3>2. Verantwortliche Stelle</h3>
+        <p><strong>Helga Dinora Triste Juárez</strong><br/>
+        Wolzenseeweg 18, 13599 Berlin<br/>
+        E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+
+        <h3>3. Datenerfassung auf dieser Website</h3>
+        <p><strong>Cookies:</strong> Diese Website verwendet technisch notwendige Cookies, um den Betrieb der Seite zu gewährleisten. Sie können Ihren Browser so einstellen, dass Cookies abgelehnt werden.</p>
+        <p><strong>Kontaktformular / E-Mail:</strong> Wenn Sie uns per E-Mail oder Formular kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und für Rückfragen gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+        <p><strong>Buchungen via Calendly:</strong> Bei der Buchung einer Session über Calendly gelten die Datenschutzbestimmungen von Calendly (calendly.com/privacy). Dabei werden Name und E-Mail-Adresse verarbeitet.</p>
+        <p><strong>Google Fonts:</strong> Diese Seite nutzt Google Fonts zur einheitlichen Darstellung von Schriftarten. Beim Aufruf der Seite lädt Ihr Browser die benötigten Schriften von Google-Servern. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
+
+        <h3>4. Ihre Rechte</h3>
+        <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer gespeicherten personenbezogenen Daten sowie das Recht auf Datenübertragbarkeit. Wenden Sie sich dazu an: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+
+        <h3>5. Beschwerderecht</h3>
+        <p>Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren. Die zuständige Aufsichtsbehörde für Berlin ist der Berliner Beauftragte für Datenschutz und Informationsfreiheit.</p>
+
+        <h3>6. Datensicherheit</h3>
+        <p>Diese Seite nutzt SSL- bzw. TLS-Verschlüsselung (erkennbar am „https://" in der Adresszeile Ihres Browsers).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner">
+    <div class="cookie-inner">
+      <p>🍪 Diese Website verwendet Cookies für eine optimale Nutzererfahrung. <a href="#" onclick="openModal('datenschutz')">Mehr erfahren</a></p>
+      <div class="cookie-btns">
+        <button onclick="acceptCookies()" class="cookie-accept">Alle akzeptieren</button>
+        <button onclick="declineCookies()" class="cookie-decline">Nur notwendige</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* MODALS */
+    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; overflow-y:auto; padding:2rem 1rem; }
+    .modal-overlay.active { display:flex; align-items:flex-start; justify-content:center; }
+    .modal-box { background:var(--cream); max-width:700px; width:100%; padding:3rem; position:relative; margin:auto; }
+    .modal-close { position:absolute; top:1rem; right:1rem; background:none; border:none; font-size:1.2rem; cursor:pointer; color:var(--text-mid); transition:color 0.2s; }
+    .modal-close:hover { color:var(--deep-purple); }
+    .modal-title { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--deep-purple); margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--gold); }
+    .modal-content h3 { font-family:'Jost',sans-serif; font-size:0.85rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--deep-purple); margin:1.5rem 0 0.5rem; }
+    .modal-content p { font-size:0.92rem; line-height:1.75; color:var(--text-mid); font-weight:300; margin-bottom:0.5rem; }
+    .modal-content a { color:var(--soft-purple); }
+    .modal-content em { color:var(--soft-purple); font-style:italic; }
+
+    /* COOKIE BANNER */
+    #cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:999; background:var(--deep-purple); border-top:1px solid rgba(201,169,110,0.3); padding:1rem 2rem; transform:translateY(100%); transition:transform 0.4s ease; }
+    #cookie-banner.visible { transform:translateY(0); }
+    .cookie-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
+    .cookie-inner p { font-size:0.85rem; color:rgba(255,255,255,0.8); font-weight:300; }
+    .cookie-inner a { color:var(--gold); text-decoration:none; }
+    .cookie-btns { display:flex; gap:0.8rem; }
+    .cookie-accept { padding:0.6rem 1.5rem; background:var(--gold); color:var(--deep-purple); border:none; font-family:'Jost',sans-serif; font-size:0.78rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:opacity 0.2s; }
+    .cookie-accept:hover { opacity:0.85; }
+    .cookie-decline { padding:0.6rem 1.5rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); font-family:'Jost',sans-serif; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:border-color 0.2s; }
+    .cookie-decline:hover { border-color:var(--gold); color:var(--gold); }
+  </style>
 
   <script>
     const reveals = document.querySelectorAll('.reveal');
@@ -310,6 +424,36 @@
         btn.style.background = '#4D3B6E';
       }, 1500);
     }
+
+    // MODALS
+    function openModal(name) {
+      event.preventDefault();
+      document.getElementById('modal-' + name).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(name) {
+      document.getElementById('modal-' + name).classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function closeModalOutside(e, name) {
+      if (e.target === document.getElementById('modal-' + name)) closeModal(name);
+    }
+
+    // COOKIES
+    function showCookieBanner() {
+      if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(() => document.getElementById('cookie-banner').classList.add('visible'), 1000);
+      }
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').classList.remove('visible');
+    }
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'declined');
+      document.getElementById('cookie-banner').classList.remove('visible');
+    }
+    showCookieBanner();
   </script>
 </body>
 </html>
