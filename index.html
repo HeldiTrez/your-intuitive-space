@@ -5,22 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Intuitive Space · Anaiss – Engel-Channeling & innere Führung</title>
   <meta name="description" content="Finde Klarheit und komm zurück in deine innere Führung. 1:1 Engel-Channeling Sessions mit Anaiss – online, auf Deutsch." />
-  <meta name="keywords" content="Engel Channeling, Intuition stärken, innere Führung, spirituelles Coaching, 1:1 Session online, Berlin" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --deep-purple: #2D1B4E;
-      --mid-purple:  #4D3B6E;
-      --soft-purple: #6B4E8C;
-      --gold:        #C9A96E;
-      --gold-light:  #E2C99A;
-      --cream:       #FAF7F2;
-      --cream-dark:  #F0EBE1;
-      --white:       #ffffff;
-      --text-dark:   #1A1A2E;
-      --text-mid:    #4A4A5A;
+      --deep-purple: #2D1B4E; --mid-purple: #4D3B6E; --soft-purple: #6B4E8C;
+      --gold: #C9A96E; --gold-light: #E2C99A; --cream: #FAF7F2;
+      --cream-dark: #F0EBE1; --white: #ffffff; --text-dark: #1A1A2E; --text-mid: #4A4A5A;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -29,9 +21,14 @@
     /* NAV */
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 3rem; background: rgba(45,27,78,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,169,110,0.2); }
     .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 300; letter-spacing: 0.18em; color: var(--gold); text-decoration: none; text-transform: uppercase; }
+    .nav-right { display: flex; align-items: center; gap: 2rem; }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.3s; }
     .nav-links a:hover { color: var(--gold); }
+    .lang-switcher { display: flex; gap: 0.3rem; }
+    .lang-btn { background: transparent; border: 1px solid rgba(201,169,110,0.3); color: rgba(255,255,255,0.5); font-family: 'Jost', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; padding: 0.25rem 0.55rem; cursor: pointer; transition: all 0.25s; }
+    .lang-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .lang-btn.active { background: var(--gold); border-color: var(--gold); color: var(--deep-purple); font-weight: 500; }
 
     /* HERO */
     #hero { min-height: 100vh; background: var(--deep-purple); display: grid; place-items: center; position: relative; overflow: hidden; padding: 8rem 2rem 4rem; }
@@ -139,244 +136,6 @@
     .reveal.animate { opacity: 0; transform: translateY(30px); }
     .reveal.animate.visible { opacity: 1; transform: translateY(0); }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { display: none; }
-      .ueber-inner, .lm-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .ueber-circle { max-width: 280px; }
-      .cards { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <a href="#" class="nav-logo">Your Intuitive Space</a>
-    <ul class="nav-links">
-      <li><a href="#ueber">Über Anaiss</a></li>
-      <li><a href="#angebote">Angebote</a></li>
-      <li><a href="#leadmagnet">Gratis Guide</a></li>
-      <li><a href="#cta">Session buchen</a></li>
-    </ul>
-  </nav>
-
-  <section id="hero">
-    <div class="hero-orbs">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Engel-Channeling · 1:1 Sessions online</p>
-      <h1 class="hero-title">Finde Klarheit und komm zurück in<br/><em>deine innere Führung</em></h1>
-      <p class="hero-sub">Wir sind spirituelle Wesen in einer menschlichen Erfahrung. Engel‑Channeling unterstützt dich dabei, deine eigene Intuition und innere Kraft wieder klarer zu spüren.</p>
-      <div class="hero-ctas">
-        <a href="#cta" class="btn-primary">Session anfragen</a>
-        <a href="#leadmagnet" class="btn-ghost">Gratis Guide herunterladen</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Entdecke mehr</span>
-    </div>
-  </section>
-
-  <section id="ueber">
-    <div class="ueber-inner">
-      <div class="reveal">
-        <div class="ueber-circle">
-          <div class="ueber-circle-inner">
-            <div class="ueber-symbol">✦</div>
-            <div class="ueber-name">Anaiss</div>
-            <div class="ueber-tagline">Engel-Channeling · Innere Führung</div>
-          </div>
-        </div>
-      </div>
-      <div class="ueber-text reveal">
-        <p class="section-eyebrow" style="text-align:left;">Über mich</p>
-        <h2>Ich begleite dich zurück zu <em>dir selbst</em></h2>
-        <p>Ich bin Anaiss und begleite Menschen mit Engel‑Channeling, die spüren, dass es mehr gibt als das, was der Verstand erfassen kann.</p>
-        <p>In meiner Arbeit verbinde ich die spirituelle Ebene mit deinem ganz konkreten Alltag. Die Botschaften sollen dir helfen, dich selbst besser zu verstehen, klarere Entscheidungen zu treffen und deiner Intuition wieder mehr zu vertrauen.</p>
-        <blockquote class="ueber-quote">„Deine Intuition ist dein inneres GPS – wenn sie gut funktioniert, fügt sich alles andere leichter."</blockquote>
-        <p>Mir ist wichtig, dass du dich sicher und gesehen fühlst – als spirituelles Wesen in einer sehr menschlichen Erfahrung.</p>
-        <a href="#cta" class="btn-primary" style="margin-top:1rem;">Session anfragen</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="angebote">
-    <div class="angebote-inner">
-      <div class="angebote-header reveal">
-        <p class="section-eyebrow">Angebote</p>
-        <div class="divider" style="margin-bottom:1.5rem;"></div>
-        <h2>Dein Weg zur inneren Klarheit</h2>
-        <p>Wähle das Angebot, das jetzt zu dir passt.</p>
-      </div>
-      <div class="cards">
-        <div class="card reveal">
-          <div class="card-number">01</div>
-          <h3>Einzel-Session</h3>
-          <p class="card-duration">60 Minuten · Online</p>
-          <p>Eine tiefe 1:1 Begegnung mit deiner inneren Führung. Du erhältst Botschaften und Impulse, die dir helfen, Antworten auf deine aktuellen Fragen zu finden.</p>
-          <div class="card-price">88 € <span>/ Session</span></div>
-          <ul>
-            <li>Anliegen klären & Ankommen</li>
-            <li>Engel-Channeling & Botschaften</li>
-            <li>Integration & Verbindung zur Intuition</li>
-            <li>Video-Call · alle nötigen Infos per E‑Mail</li>
-          </ul>
-          <a href="mailto:info@yourintuitivespace.com?subject=Einzel-Session%20Anfrage" class="btn-card">Jetzt anfragen</a>
-        </div>
-        <div class="card featured reveal">
-          <div class="card-badge">Empfohlen</div>
-          <div class="card-number">02</div>
-          <h3>3er-Paket</h3>
-          <p class="card-duration">3 × 60 Minuten · Online</p>
-          <p>Für tiefere Themen und nachhaltige Transformation. Drei Sessions, um konkrete Punkte aus dem Channeling zu vertiefen und in deinen Alltag zu integrieren.</p>
-          <div class="card-price">222 € <span>/ Paket</span></div>
-          <ul>
-            <li>3 aufeinander aufbauende Sessions</li>
-            <li>Individueller Fokus & roten Faden</li>
-            <li>Integration zwischen den Sessions</li>
-            <li>Begleitung auf dem Weg zur Klarheit</li>
-          </ul>
-          <a href="mailto:info@yourintuitivespace.com?subject=3er-Paket%20Anfrage" class="btn-card">Jetzt anfragen</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="leadmagnet">
-    <div class="lm-inner">
-      <div class="reveal">
-        <div class="lm-book">
-          <p class="lm-book-eyebrow">Gratis · Kostenloser Guide</p>
-          <h3 class="lm-book-title">3 Zeichen, dass deine<br/><em>Intuition spricht</em></h3>
-          <div class="lm-book-divider"></div>
-          <p class="lm-book-sub">Erkenne die stillen Botschaften deiner inneren Führung – und lerne, ihnen zu vertrauen.</p>
-          <span class="lm-free-badge">Kostenlos herunterladen</span>
-        </div>
-      </div>
-      <div class="lm-text reveal">
-        <p class="section-eyebrow" style="text-align:left;">Gratis Guide</p>
-        <h2>Deine Intuition spricht – kannst du sie hören?</h2>
-        <p>In diesem kostenlosen Guide zeige ich dir die 3 häufigsten Zeichen, die deine Intuition sendet – und eine einfache Technik für den Alltag, um wieder in Verbindung zu kommen.</p>
-        <p>Trag dich ein und erhalte deinen persönlichen Guide sofort per E‑Mail.</p>
-        <form class="lm-form" onsubmit="handleSubmit(event)">
-          <input type="text" placeholder="Dein Vorname" required />
-          <input type="email" placeholder="Deine E‑Mail-Adresse" required />
-          <button type="submit" class="btn-primary">Guide kostenlos erhalten ✦</button>
-        </form>
-        <p class="lm-disclaimer">Kein Spam. Nur wertvolle Inhalte. Abmeldung jederzeit möglich.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="cta">
-    <div class="cta-inner">
-      <div class="cta-symbol reveal">✦</div>
-      <h2 class="reveal">Bereit, wieder in deine<br/><em>innere Kraft</em> zu kommen?</h2>
-      <p class="reveal">Schreib mir eine kurze Nachricht mit deinem Anliegen und deinen Terminwünschen. Ich melde mich bei dir mit Vorschlägen und allen weiteren Informationen.</p>
-      <a href="https://calendly.com/yourintuitivespace/engel-channeling-session-60-min" target="_blank" class="btn-primary reveal">Session buchen ✦</a>
-      <p class="cta-contact reveal">Du kannst direkt über E‑Mail Kontakt aufnehmen: <a href="mailto:info@yourintuitivespace.com">info@yourintuitivespace.com</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Your Intuitive Space · Anaiss &nbsp;·&nbsp; <a href="#" onclick="openModal('impressum')">Impressum</a> &nbsp;·&nbsp; <a href="#" onclick="openModal('datenschutz')">Datenschutz</a></p>
-    <p style="margin-top:0.5rem;font-size:0.65rem;">Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung und ersetzen keine medizinische oder therapeutische Behandlung.</p>
-  </footer>
-
-  <!-- IMPRESSUM MODAL -->
-  <div id="modal-impressum" class="modal-overlay" onclick="closeModalOutside(event,'modal-impressum')">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('impressum')">✕</button>
-      <h2 class="modal-title">Impressum</h2>
-      <div class="modal-content">
-        <h3>Angaben gemäß § 5 TMG</h3>
-        <p><strong>Helga Dinora Triste Juárez</strong><br/>
-        Freiberuflerin<br/>
-        Wolzenseeweg 18<br/>
-        13599 Berlin<br/>
-        Deutschland</p>
-
-        <h3>Kontakt</h3>
-        <p>E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
-
-        <h3>Steuernummer</h3>
-        <p>Steuernummer: <em>[folgt in Kürze]</em><br/>
-        Zuständiges Finanzamt: Finanzamt Berlin</p>
-
-        <h3>Berufsbezeichnung</h3>
-        <p>Freiberuflerin · Spirituelle Begleitung & Engel-Channeling</p>
-
-        <h3>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h3>
-        <p>Helga Dinora Triste Juárez<br/>
-        Wolzenseeweg 18, 13599 Berlin</p>
-
-        <h3>Haftung für Inhalte</h3>
-        <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
-
-        <h3>Haftung für Links</h3>
-        <p>Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
-
-        <h3>Urheberrecht</h3>
-        <p>Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Autorin.</p>
-
-        <h3>Streitschlichtung (§ 36 VSBG)</h3>
-        <p>Ich bin weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-
-        <h3>Hinweis</h3>
-        <p>Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung. Sie stellen keine medizinische, psychologische oder therapeutische Behandlung dar und ersetzen nicht die Diagnose oder Behandlung durch einen Arzt, Heilpraktiker oder Therapeuten.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- DATENSCHUTZ MODAL -->
-  <div id="modal-datenschutz" class="modal-overlay" onclick="closeModalOutside(event,'modal-datenschutz')">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('datenschutz')">✕</button>
-      <h2 class="modal-title">Datenschutzerklärung</h2>
-      <div class="modal-content">
-        <h3>1. Datenschutz auf einen Blick</h3>
-        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
-
-        <h3>2. Verantwortliche Stelle</h3>
-        <p><strong>Helga Dinora Triste Juárez</strong><br/>
-        Wolzenseeweg 18, 13599 Berlin<br/>
-        E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
-
-        <h3>3. Datenerfassung auf dieser Website</h3>
-        <p><strong>Cookies:</strong> Diese Website verwendet technisch notwendige Cookies, um den Betrieb der Seite zu gewährleisten. Sie können Ihren Browser so einstellen, dass Cookies abgelehnt werden.</p>
-        <p><strong>Kontaktformular / E-Mail:</strong> Wenn Sie uns per E-Mail oder Formular kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und für Rückfragen gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-        <p><strong>Buchungen via Calendly:</strong> Bei der Buchung einer Session über Calendly gelten die Datenschutzbestimmungen von Calendly (calendly.com/privacy). Dabei werden Name und E-Mail-Adresse verarbeitet.</p>
-        <p><strong>Google Fonts:</strong> Diese Seite nutzt Google Fonts zur einheitlichen Darstellung von Schriftarten. Beim Aufruf der Seite lädt Ihr Browser die benötigten Schriften von Google-Servern. Dabei wird Ihre IP-Adresse an Google übermittelt.</p>
-
-        <h3>4. Ihre Rechte</h3>
-        <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer gespeicherten personenbezogenen Daten sowie das Recht auf Datenübertragbarkeit. Wenden Sie sich dazu an: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
-
-        <h3>5. Beschwerderecht</h3>
-        <p>Sie haben das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren. Die zuständige Aufsichtsbehörde für Berlin ist der Berliner Beauftragte für Datenschutz und Informationsfreiheit.</p>
-
-        <h3>6. Datensicherheit</h3>
-        <p>Diese Seite nutzt SSL- bzw. TLS-Verschlüsselung (erkennbar am „https://" in der Adresszeile Ihres Browsers).</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- COOKIE BANNER -->
-  <div id="cookie-banner">
-    <div class="cookie-inner">
-      <p>🍪 Diese Website verwendet Cookies für eine optimale Nutzererfahrung. <a href="#" onclick="openModal('datenschutz')">Mehr erfahren</a></p>
-      <div class="cookie-btns">
-        <button onclick="acceptCookies()" class="cookie-accept">Alle akzeptieren</button>
-        <button onclick="declineCookies()" class="cookie-decline">Nur notwendige</button>
-      </div>
-    </div>
-  </div>
-
-  <style>
     /* MODALS */
     .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:1000; overflow-y:auto; padding:2rem 1rem; }
     .modal-overlay.active { display:flex; align-items:flex-start; justify-content:center; }
@@ -389,7 +148,7 @@
     .modal-content a { color:var(--soft-purple); }
     .modal-content em { color:var(--soft-purple); font-style:italic; }
 
-    /* COOKIE BANNER */
+    /* COOKIE */
     #cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:999; background:var(--deep-purple); border-top:1px solid rgba(201,169,110,0.3); padding:1rem 2rem; transform:translateY(100%); transition:transform 0.4s ease; }
     #cookie-banner.visible { transform:translateY(0); }
     .cookie-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; }
@@ -400,60 +159,416 @@
     .cookie-accept:hover { opacity:0.85; }
     .cookie-decline { padding:0.6rem 1.5rem; background:transparent; color:rgba(255,255,255,0.7); border:1px solid rgba(255,255,255,0.3); font-family:'Jost',sans-serif; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:border-color 0.2s; }
     .cookie-decline:hover { border-color:var(--gold); color:var(--gold); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .nav-right { gap: 1rem; }
+      .ueber-inner, .lm-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .ueber-circle { max-width: 280px; }
+      .cards { grid-template-columns: 1fr; }
+    }
   </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo">Your Intuitive Space</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#ueber" data-i18n="nav.about"></a></li>
+        <li><a href="#angebote" data-i18n="nav.offers"></a></li>
+        <li><a href="#leadmagnet" data-i18n="nav.guide"></a></li>
+        <li><a href="#cta" data-i18n="nav.book"></a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('de')">DE</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1 class="hero-title" data-i18n-html="hero.title"></h1>
+      <p class="hero-sub" data-i18n="hero.sub"></p>
+      <div class="hero-ctas">
+        <a href="#cta" class="btn-primary" data-i18n="hero.cta1"></a>
+        <a href="#leadmagnet" class="btn-ghost" data-i18n="hero.cta2"></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span data-i18n="hero.scroll"></span>
+    </div>
+  </section>
+
+  <section id="ueber">
+    <div class="ueber-inner">
+      <div class="reveal">
+        <div class="ueber-circle">
+          <div class="ueber-circle-inner">
+            <div class="ueber-symbol">✦</div>
+            <div class="ueber-name">Anaiss</div>
+            <div class="ueber-tagline" data-i18n="about.tagline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ueber-text reveal">
+        <p class="section-eyebrow" style="text-align:left;" data-i18n="about.eyebrow"></p>
+        <h2 data-i18n-html="about.title"></h2>
+        <p data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+        <blockquote class="ueber-quote" data-i18n="about.quote"></blockquote>
+        <p data-i18n="about.p3"></p>
+        <a href="#cta" class="btn-primary" style="margin-top:1rem;" data-i18n="hero.cta1"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="angebote">
+    <div class="angebote-inner">
+      <div class="angebote-header reveal">
+        <p class="section-eyebrow" data-i18n="offers.eyebrow"></p>
+        <div class="divider" style="margin-bottom:1.5rem;"></div>
+        <h2 data-i18n="offers.title"></h2>
+        <p data-i18n="offers.sub"></p>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="card-number">01</div>
+          <h3 data-i18n="offers.card1.title"></h3>
+          <p class="card-duration" data-i18n="offers.card1.duration"></p>
+          <p data-i18n="offers.card1.desc"></p>
+          <div class="card-price">88 € <span data-i18n="offers.per_session"></span></div>
+          <ul>
+            <li data-i18n="offers.card1.li1"></li>
+            <li data-i18n="offers.card1.li2"></li>
+            <li data-i18n="offers.card1.li3"></li>
+            <li data-i18n="offers.card1.li4"></li>
+          </ul>
+          <a href="mailto:contact@yourintuitivespace.com?subject=Einzel-Session" class="btn-card" data-i18n="offers.inquire"></a>
+        </div>
+        <div class="card featured reveal">
+          <div class="card-badge" data-i18n="offers.recommended"></div>
+          <div class="card-number">02</div>
+          <h3 data-i18n="offers.card2.title"></h3>
+          <p class="card-duration" data-i18n="offers.card2.duration"></p>
+          <p data-i18n="offers.card2.desc"></p>
+          <div class="card-price">222 € <span data-i18n="offers.per_package"></span></div>
+          <ul>
+            <li data-i18n="offers.card2.li1"></li>
+            <li data-i18n="offers.card2.li2"></li>
+            <li data-i18n="offers.card2.li3"></li>
+            <li data-i18n="offers.card2.li4"></li>
+          </ul>
+          <a href="mailto:contact@yourintuitivespace.com?subject=3er-Paket" class="btn-card" data-i18n="offers.inquire"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadmagnet">
+    <div class="lm-inner">
+      <div class="reveal">
+        <div class="lm-book">
+          <p class="lm-book-eyebrow" data-i18n="guide.badge"></p>
+          <h3 class="lm-book-title" data-i18n-html="guide.book_title"></h3>
+          <div class="lm-book-divider"></div>
+          <p class="lm-book-sub" data-i18n="guide.book_sub"></p>
+          <span class="lm-free-badge" data-i18n="guide.download"></span>
+        </div>
+      </div>
+      <div class="lm-text reveal">
+        <p class="section-eyebrow" style="text-align:left;" data-i18n="guide.eyebrow"></p>
+        <h2 data-i18n="guide.title"></h2>
+        <p data-i18n="guide.p1"></p>
+        <p data-i18n="guide.p2"></p>
+        <form class="lm-form" onsubmit="handleSubmit(event)">
+          <input type="text" data-i18n-placeholder="guide.name_placeholder" required />
+          <input type="email" data-i18n-placeholder="guide.email_placeholder" required />
+          <button type="submit" class="btn-primary" data-i18n="guide.submit"></button>
+        </form>
+        <p class="lm-disclaimer" data-i18n="guide.disclaimer"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="cta-inner">
+      <div class="cta-symbol reveal">✦</div>
+      <h2 class="reveal" data-i18n-html="cta.title"></h2>
+      <p class="reveal" data-i18n="cta.sub"></p>
+      <a href="https://calendly.com/yourintuitivespace/engel-channeling-session-60-min" target="_blank" class="btn-primary reveal" data-i18n="cta.btn"></a>
+      <p class="cta-contact reveal"><span data-i18n="cta.email_label"></span> <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Intuitive Space · Anaiss &nbsp;·&nbsp;
+      <a href="#" onclick="openModal('impressum')">Impressum</a> &nbsp;·&nbsp;
+      <a href="#" onclick="openModal('datenschutz')">Datenschutz</a>
+    </p>
+    <p style="margin-top:0.5rem;font-size:0.65rem;" data-i18n="footer.disclaimer"></p>
+  </footer>
+
+  <!-- IMPRESSUM MODAL -->
+  <div id="modal-impressum" class="modal-overlay" onclick="closeModalOutside(event,'modal-impressum')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('impressum')">✕</button>
+      <h2 class="modal-title">Impressum</h2>
+      <div class="modal-content">
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p><strong>Helga Dinora Triste Juárez</strong><br/>Freiberuflerin<br/>Wolzenseeweg 18<br/>13599 Berlin<br/>Deutschland</p>
+        <h3>Kontakt</h3>
+        <p>E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+        <h3>Steuernummer</h3>
+        <p>Steuernummer: <em>[folgt in Kürze]</em><br/>Zuständiges Finanzamt: Finanzamt Berlin</p>
+        <h3>Berufsbezeichnung</h3>
+        <p>Freiberuflerin · Spirituelle Begleitung & Engel-Channeling</p>
+        <h3>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h3>
+        <p>Helga Dinora Triste Juárez<br/>Wolzenseeweg 18, 13599 Berlin</p>
+        <h3>Haftung für Inhalte</h3>
+        <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+        <h3>Urheberrecht</h3>
+        <p>Die durch die Seitenbetreiberin erstellten Inhalte unterliegen dem deutschen Urheberrecht. Die Vervielfältigung bedarf der schriftlichen Zustimmung der jeweiligen Autorin.</p>
+        <h3>Streitschlichtung (§ 36 VSBG)</h3>
+        <p>Ich bin weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <h3>Hinweis</h3>
+        <p>Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung. Sie stellen keine medizinische, psychologische oder therapeutische Behandlung dar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATENSCHUTZ MODAL -->
+  <div id="modal-datenschutz" class="modal-overlay" onclick="closeModalOutside(event,'modal-datenschutz')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('datenschutz')">✕</button>
+      <h2 class="modal-title">Datenschutzerklärung</h2>
+      <div class="modal-content">
+        <h3>1. Verantwortliche Stelle</h3>
+        <p><strong>Helga Dinora Triste Juárez</strong><br/>Wolzenseeweg 18, 13599 Berlin<br/>E-Mail: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+        <h3>2. Datenerfassung</h3>
+        <p><strong>Cookies:</strong> Diese Website verwendet technisch notwendige Cookies.</p>
+        <p><strong>Kontakt / E-Mail:</strong> Ihre Angaben werden zur Bearbeitung der Anfrage gespeichert und nicht weitergegeben.</p>
+        <p><strong>Calendly:</strong> Bei Buchungen gelten die Datenschutzbestimmungen von Calendly (calendly.com/privacy).</p>
+        <p><strong>Google Fonts:</strong> Diese Seite nutzt Google Fonts. Dabei wird Ihre IP-Adresse an Google-Server übermittelt.</p>
+        <h3>3. Ihre Rechte</h3>
+        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung Ihrer gespeicherten Daten. Kontakt: <a href="mailto:contact@yourintuitivespace.com">contact@yourintuitivespace.com</a></p>
+        <h3>4. Datensicherheit</h3>
+        <p>Diese Seite nutzt SSL/TLS-Verschlüsselung (erkennbar am „https://" in der Adresszeile).</p>
+        <h3>5. Beschwerderecht</h3>
+        <p>Zuständige Aufsichtsbehörde: Berliner Beauftragter für Datenschutz und Informationsfreiheit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner">
+    <div class="cookie-inner">
+      <p id="cookie-text">🍪 <span data-i18n="cookie.text"></span> <a href="#" onclick="openModal('datenschutz')" data-i18n="cookie.more"></a></p>
+      <div class="cookie-btns">
+        <button onclick="acceptCookies()" class="cookie-accept" data-i18n="cookie.accept"></button>
+        <button onclick="declineCookies()" class="cookie-decline" data-i18n="cookie.decline"></button>
+      </div>
+    </div>
+  </div>
 
   <script>
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(el => el.classList.add('animate'));
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
+  // ── TRANSLATIONS ────────────────────────────────────────────────────────────
+  const i18n = {
+    de: {
+      'nav.about': 'Über Anaiss', 'nav.offers': 'Angebote', 'nav.guide': 'Gratis Guide', 'nav.book': 'Session buchen',
+      'hero.eyebrow': 'Engel-Channeling · 1:1 Sessions online',
+      'hero.title': 'Finde Klarheit und komm zurück in<br/><em>deine innere Führung</em>',
+      'hero.sub': 'Wir sind spirituelle Wesen in einer menschlichen Erfahrung. Engel‑Channeling unterstützt dich dabei, deine eigene Intuition und innere Kraft wieder klarer zu spüren.',
+      'hero.cta1': 'Session anfragen', 'hero.cta2': 'Gratis Guide herunterladen', 'hero.scroll': 'Entdecke mehr',
+      'about.tagline': 'Engel-Channeling · Innere Führung', 'about.eyebrow': 'Über mich',
+      'about.title': 'Ich begleite dich zurück zu <em>dir selbst</em>',
+      'about.p1': 'Ich bin Anaiss und begleite Menschen mit Engel‑Channeling, die spüren, dass es mehr gibt als das, was der Verstand erfassen kann.',
+      'about.p2': 'In meiner Arbeit verbinde ich die spirituelle Ebene mit deinem ganz konkreten Alltag. Die Botschaften sollen dir helfen, dich selbst besser zu verstehen, klarere Entscheidungen zu treffen und deiner Intuition wieder mehr zu vertrauen.',
+      'about.quote': '„Deine Intuition ist dein inneres GPS – wenn sie gut funktioniert, fügt sich alles andere leichter."',
+      'about.p3': 'Mir ist wichtig, dass du dich sicher und gesehen fühlst – als spirituelles Wesen in einer sehr menschlichen Erfahrung.',
+      'offers.eyebrow': 'Angebote', 'offers.title': 'Dein Weg zur inneren Klarheit', 'offers.sub': 'Wähle das Angebot, das jetzt zu dir passt.',
+      'offers.card1.title': 'Einzel-Session', 'offers.card1.duration': '60 Minuten · Online',
+      'offers.card1.desc': 'Eine tiefe 1:1 Begegnung mit deiner inneren Führung. Du erhältst Botschaften und Impulse, die dir helfen, Antworten auf deine aktuellen Fragen zu finden.',
+      'offers.card1.li1': 'Anliegen klären & Ankommen', 'offers.card1.li2': 'Engel-Channeling & Botschaften',
+      'offers.card1.li3': 'Integration & Verbindung zur Intuition', 'offers.card1.li4': 'Video-Call · alle nötigen Infos per E‑Mail',
+      'offers.card2.title': '3er-Paket', 'offers.card2.duration': '3 × 60 Minuten · Online',
+      'offers.card2.desc': 'Für tiefere Themen und nachhaltige Transformation. Drei Sessions, um konkrete Punkte aus dem Channeling zu vertiefen.',
+      'offers.card2.li1': '3 aufeinander aufbauende Sessions', 'offers.card2.li2': 'Individueller Fokus & roten Faden',
+      'offers.card2.li3': 'Integration zwischen den Sessions', 'offers.card2.li4': 'Begleitung auf dem Weg zur Klarheit',
+      'offers.per_session': '/ Session', 'offers.per_package': '/ Paket', 'offers.inquire': 'Jetzt anfragen', 'offers.recommended': 'Empfohlen',
+      'guide.badge': 'Gratis · Kostenloser Guide', 'guide.book_title': '3 Zeichen, dass deine<br/><em>Intuition spricht</em>',
+      'guide.book_sub': 'Erkenne die stillen Botschaften deiner inneren Führung – und lerne, ihnen zu vertrauen.',
+      'guide.download': 'Kostenlos herunterladen', 'guide.eyebrow': 'Gratis Guide',
+      'guide.title': 'Deine Intuition spricht – kannst du sie hören?',
+      'guide.p1': 'In diesem kostenlosen Guide zeige ich dir die 3 häufigsten Zeichen, die deine Intuition sendet – und eine einfache Technik für den Alltag.',
+      'guide.p2': 'Trag dich ein und erhalte deinen persönlichen Guide sofort per E‑Mail.',
+      'guide.name_placeholder': 'Dein Vorname', 'guide.email_placeholder': 'Deine E‑Mail-Adresse',
+      'guide.submit': 'Guide kostenlos erhalten ✦', 'guide.disclaimer': 'Kein Spam. Nur wertvolle Inhalte. Abmeldung jederzeit möglich.',
+      'cta.title': 'Bereit, wieder in deine<br/><em>innere Kraft</em> zu kommen?',
+      'cta.sub': 'Schreib mir eine kurze Nachricht mit deinem Anliegen und deinen Terminwünschen.',
+      'cta.btn': 'Session buchen ✦', 'cta.email_label': 'Du kannst direkt über E‑Mail Kontakt aufnehmen:',
+      'footer.disclaimer': 'Meine Angebote dienen ausschließlich der persönlichen und spirituellen Entwicklung und ersetzen keine medizinische oder therapeutische Behandlung.',
+      'cookie.text': 'Diese Website verwendet Cookies für eine optimale Nutzererfahrung.', 'cookie.more': 'Mehr erfahren',
+      'cookie.accept': 'Alle akzeptieren', 'cookie.decline': 'Nur notwendige',
+    },
+    en: {
+      'nav.about': 'About Anaiss', 'nav.offers': 'Offerings', 'nav.guide': 'Free Guide', 'nav.book': 'Book Session',
+      'hero.eyebrow': 'Angel Channeling · 1:1 Sessions online',
+      'hero.title': 'Find Clarity and Return to<br/><em>Your Inner Guidance</em>',
+      'hero.sub': 'We are spiritual beings in a human experience. Angel Channeling helps you reconnect with your intuition and inner strength.',
+      'hero.cta1': 'Request Session', 'hero.cta2': 'Download Free Guide', 'hero.scroll': 'Discover more',
+      'about.tagline': 'Angel Channeling · Inner Guidance', 'about.eyebrow': 'About me',
+      'about.title': 'I guide you back to <em>yourself</em>',
+      'about.p1': 'I am Anaiss and I accompany people through Angel Channeling who sense that there is more than what the mind can grasp.',
+      'about.p2': 'In my work, I connect the spiritual level with your everyday life. The messages help you understand yourself better, make clearer decisions, and trust your intuition more.',
+      'about.quote': '"Your intuition is your inner GPS – when it works well, everything else falls into place."',
+      'about.p3': 'It is important to me that you feel safe and seen – as a spiritual being in a very human experience.',
+      'offers.eyebrow': 'Offerings', 'offers.title': 'Your Path to Inner Clarity', 'offers.sub': 'Choose the offering that resonates with you right now.',
+      'offers.card1.title': 'Single Session', 'offers.card1.duration': '60 Minutes · Online',
+      'offers.card1.desc': 'A deep 1:1 encounter with your inner guidance. You receive messages and impulses that help you find answers to your current questions.',
+      'offers.card1.li1': 'Clarify your intention & arrive', 'offers.card1.li2': 'Angel Channeling & messages',
+      'offers.card1.li3': 'Integration & connection to your intuition', 'offers.card1.li4': 'Video call · all details via email',
+      'offers.card2.title': '3-Session Package', 'offers.card2.duration': '3 × 60 Minutes · Online',
+      'offers.card2.desc': 'For deeper themes and lasting transformation. Three sessions to deepen specific points from the channeling.',
+      'offers.card2.li1': '3 connected sessions', 'offers.card2.li2': 'Individual focus & red thread',
+      'offers.card2.li3': 'Integration between sessions', 'offers.card2.li4': 'Guidance on your path to clarity',
+      'offers.per_session': '/ Session', 'offers.per_package': '/ Package', 'offers.inquire': 'Inquire now', 'offers.recommended': 'Recommended',
+      'guide.badge': 'Free Guide', 'guide.book_title': '3 Signs Your<br/><em>Intuition Is Speaking</em>',
+      'guide.book_sub': 'Recognize the quiet messages of your inner guidance – and learn to trust them.',
+      'guide.download': 'Download for free', 'guide.eyebrow': 'Free Guide',
+      'guide.title': 'Your intuition is speaking – can you hear it?',
+      'guide.p1': 'In this free guide I show you the 3 most common signs your intuition sends – and a simple daily technique to reconnect.',
+      'guide.p2': 'Sign up and receive your personal guide immediately by email.',
+      'guide.name_placeholder': 'Your first name', 'guide.email_placeholder': 'Your email address',
+      'guide.submit': 'Get free guide ✦', 'guide.disclaimer': 'No spam. Only valuable content. Unsubscribe anytime.',
+      'cta.title': 'Ready to return to<br/><em>your inner power</em>?',
+      'cta.sub': 'Send me a short message with your intention and preferred times. I will get back to you with suggestions and all further information.',
+      'cta.btn': 'Book Session ✦', 'cta.email_label': 'You can also reach out directly by email:',
+      'footer.disclaimer': 'My offerings are exclusively for personal and spiritual development and do not replace medical or therapeutic treatment.',
+      'cookie.text': 'This website uses cookies for an optimal experience.', 'cookie.more': 'Learn more',
+      'cookie.accept': 'Accept all', 'cookie.decline': 'Essential only',
+    },
+    es: {
+      'nav.about': 'Sobre Anaiss', 'nav.offers': 'Servicios', 'nav.guide': 'Guía Gratis', 'nav.book': 'Reservar Sesión',
+      'hero.eyebrow': 'Angel Channeling · Sesiones 1:1 online',
+      'hero.title': 'Encuentra Claridad y Regresa a<br/><em>tu Guía Interior</em>',
+      'hero.sub': 'Somos seres espirituales en una experiencia humana. El Angel Channeling te ayuda a reconectar con tu intuición y tu fuerza interior.',
+      'hero.cta1': 'Solicitar Sesión', 'hero.cta2': 'Descargar Guía Gratis', 'hero.scroll': 'Descubre más',
+      'about.tagline': 'Angel Channeling · Guía Interior', 'about.eyebrow': 'Sobre mí',
+      'about.title': 'Te acompaño de regreso a <em>ti</em>',
+      'about.p1': 'Soy Anaiss y acompaño a personas a través del Angel Channeling que sienten que hay algo más de lo que la mente puede captar.',
+      'about.p2': 'En mi trabajo conecto el plano espiritual con tu vida cotidiana concreta. Los mensajes te ayudan a entenderte mejor, tomar decisiones más claras y confiar más en tu intuición.',
+      'about.quote': '"Tu intuición es tu GPS interior – cuando funciona bien, todo lo demás encaja."',
+      'about.p3': 'Para mí es importante que te sientas segura y vista – como ser espiritual en una experiencia muy humana.',
+      'offers.eyebrow': 'Servicios', 'offers.title': 'Tu Camino hacia la Claridad Interior', 'offers.sub': 'Elige la oferta que resuene contigo ahora.',
+      'offers.card1.title': 'Sesión Individual', 'offers.card1.duration': '60 Minutos · Online',
+      'offers.card1.desc': 'Un encuentro profundo 1:1 con tu guía interior. Recibes mensajes e impulsos que te ayudan a encontrar respuestas a tus preguntas actuales.',
+      'offers.card1.li1': 'Clarificar intención & llegar', 'offers.card1.li2': 'Angel Channeling & mensajes',
+      'offers.card1.li3': 'Integración & conexión con tu intuición', 'offers.card1.li4': 'Videollamada · detalles por email',
+      'offers.card2.title': 'Paquete 3 Sesiones', 'offers.card2.duration': '3 × 60 Minutos · Online',
+      'offers.card2.desc': 'Para temas más profundos y transformación duradera. Tres sesiones para profundizar puntos concretos del channeling.',
+      'offers.card2.li1': '3 sesiones conectadas', 'offers.card2.li2': 'Enfoque individual & hilo conductor',
+      'offers.card2.li3': 'Integración entre sesiones', 'offers.card2.li4': 'Acompañamiento en tu camino',
+      'offers.per_session': '/ Sesión', 'offers.per_package': '/ Paquete', 'offers.inquire': 'Solicitar ahora', 'offers.recommended': 'Recomendado',
+      'guide.badge': 'Guía Gratuita', 'guide.book_title': '3 Señales de que tu<br/><em>Intuición te habla</em>',
+      'guide.book_sub': 'Reconoce los mensajes silenciosos de tu guía interior – y aprende a confiar en ellos.',
+      'guide.download': 'Descargar gratis', 'guide.eyebrow': 'Guía Gratis',
+      'guide.title': 'Tu intuición te habla – ¿puedes escucharla?',
+      'guide.p1': 'En esta guía gratuita te muestro las 3 señales más comunes que envía tu intuición – y una técnica sencilla para el día a día.',
+      'guide.p2': 'Regístrate y recibe tu guía personal inmediatamente por email.',
+      'guide.name_placeholder': 'Tu nombre', 'guide.email_placeholder': 'Tu dirección de email',
+      'guide.submit': 'Obtener guía gratis ✦', 'guide.disclaimer': 'Sin spam. Solo contenido valioso. Cancela cuando quieras.',
+      'cta.title': '¿Lista para volver a tu<br/><em>fuerza interior</em>?',
+      'cta.sub': 'Escríbeme un mensaje corto con tu intención y tus horarios preferidos. Te respondo con sugerencias y toda la información.',
+      'cta.btn': 'Reservar Sesión ✦', 'cta.email_label': 'También puedes contactarme directamente por email:',
+      'footer.disclaimer': 'Mis servicios son exclusivamente para el desarrollo personal y espiritual y no reemplazan ningún tratamiento médico o terapéutico.',
+      'cookie.text': 'Este sitio web utiliza cookies para una experiencia óptima.', 'cookie.more': 'Más información',
+      'cookie.accept': 'Aceptar todo', 'cookie.decline': 'Solo esenciales',
+    }
+  };
 
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button');
-      btn.textContent = '✦ Guide wird gesendet…';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = '✓ Danke! Schau in dein Postfach.';
-        btn.style.background = '#4D3B6E';
-      }, 1500);
-    }
+  // ── LANGUAGE ENGINE ─────────────────────────────────────────────────────────
+  function setLang(lang) {
+    const t = i18n[lang];
+    // Update text nodes
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (t[el.dataset.i18n]) el.textContent = t[el.dataset.i18n];
+    });
+    // Update HTML nodes (for italic/bold)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      if (t[el.dataset.i18nHtml]) el.innerHTML = t[el.dataset.i18nHtml];
+    });
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      if (t[el.dataset.i18nPlaceholder]) el.placeholder = t[el.dataset.i18nPlaceholder];
+    });
+    // Update lang buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+    });
+    // Update html lang attribute
+    document.documentElement.lang = lang;
+    // Save preference
+    localStorage.setItem('lang', lang);
+  }
 
-    // MODALS
-    function openModal(name) {
-      event.preventDefault();
-      document.getElementById('modal-' + name).classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeModal(name) {
-      document.getElementById('modal-' + name).classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    function closeModalOutside(e, name) {
-      if (e.target === document.getElementById('modal-' + name)) closeModal(name);
-    }
+  // Auto-detect language
+  function detectLang() {
+    const saved = localStorage.getItem('lang');
+    if (saved && i18n[saved]) return saved;
+    const browser = navigator.language.slice(0,2).toLowerCase();
+    if (browser === 'de') return 'de';
+    if (browser === 'es') return 'es';
+    return 'en';
+  }
 
-    // COOKIES
-    function showCookieBanner() {
-      if (!localStorage.getItem('cookieConsent')) {
-        setTimeout(() => document.getElementById('cookie-banner').classList.add('visible'), 1000);
+  // Init
+  setLang(detectLang());
+
+  // ── SCROLL REVEAL ────────────────────────────────────────────────────────────
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => el.classList.add('animate'));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
       }
-    }
-    function acceptCookies() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      document.getElementById('cookie-banner').classList.remove('visible');
-    }
-    function declineCookies() {
-      localStorage.setItem('cookieConsent', 'declined');
-      document.getElementById('cookie-banner').classList.remove('visible');
-    }
-    showCookieBanner();
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── FORM ─────────────────────────────────────────────────────────────────────
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    const lang = localStorage.getItem('lang') || 'de';
+    const msgs = { de: '✓ Danke! Schau in dein Postfach.', en: '✓ Thank you! Check your inbox.', es: '✓ ¡Gracias! Revisa tu bandeja.' };
+    btn.textContent = '✦ …';
+    btn.disabled = true;
+    setTimeout(() => { btn.textContent = msgs[lang]; btn.style.background = '#4D3B6E'; }, 1500);
+  }
+
+  // ── MODALS ────────────────────────────────────────────────────────────────────
+  function openModal(name) { event.preventDefault(); document.getElementById('modal-'+name).classList.add('active'); document.body.style.overflow='hidden'; }
+  function closeModal(name) { document.getElementById('modal-'+name).classList.remove('active'); document.body.style.overflow=''; }
+  function closeModalOutside(e,name) { if(e.target===document.getElementById('modal-'+name)) closeModal(name); }
+
+  // ── COOKIES ───────────────────────────────────────────────────────────────────
+  function showCookieBanner() { if(!localStorage.getItem('cookieConsent')) setTimeout(()=>document.getElementById('cookie-banner').classList.add('visible'),1000); }
+  function acceptCookies() { localStorage.setItem('cookieConsent','accepted'); document.getElementById('cookie-banner').classList.remove('visible'); }
+  function declineCookies() { localStorage.setItem('cookieConsent','declined'); document.getElementById('cookie-banner').classList.remove('visible'); }
+  showCookieBanner();
   </script>
 </body>
 </html>
